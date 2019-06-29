@@ -5,7 +5,7 @@
 
 -----
 
-### Welcome to the **nanoFramework** Windows.Devices.Adc Library repository!
+### Welcome to the **nanoFramework** System.Devices.Dac Library repository!
 
 
 ## Build status
