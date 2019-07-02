@@ -15,7 +15,7 @@ namespace System.Devices.Dac
     public sealed class DacController : IDacController
     {
         // this is used as the lock object 
-        // a lock is required because multiple threads can access the AdcController
+        // a lock is required because multiple threads can access the DacController
         [System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)]
         private object _syncLock;
 
@@ -59,7 +59,7 @@ namespace System.Devices.Dac
             }
         }
 
-        internal DacController(string adcController)
+        internal DacController(string dacController)
         {
             // the DAC id is an ASCII string with the format 'DACn'
             // need to grab 'n' from the string and convert that to the integer value from the ASCII code (do this by subtracting 48 from the char value)
@@ -180,7 +180,7 @@ namespace System.Devices.Dac
                 if (DacControllerManager.ControllersCollection.Contains(controllerId))
                 {
                     // controller is already open
-                    return (AdcController)DacControllerManager.ControllersCollection[controllerId];
+                    return (DacController)DacControllerManager.ControllersCollection[controllerId];
                 }
                 else
                 {

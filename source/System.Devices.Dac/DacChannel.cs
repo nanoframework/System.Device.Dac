@@ -79,12 +79,12 @@ namespace System.Devices.Dac
 
         private void Dispose(bool disposing)
         {
-            if (_adcController != null)
+            if (_dacController != null)
             {
                 if (disposing)
                 {
                     NativeDisposeChannel();
-                    _adcController = null;
+                    _dacController = null;
 
                 }
 
