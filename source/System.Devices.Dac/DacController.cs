@@ -194,20 +194,6 @@ namespace System.Devices.Dac
         }
 
         /// <summary>
-        /// Verifies that the specified channel mode is supported by the controller.
-        /// </summary>
-        /// <param name="channelMode">
-        /// The channel mode.
-        /// </param>
-        /// <returns>
-        /// True if the specified channel mode is supported, otherwise false.
-        /// </returns>
-        public bool IsChannelModeSupported(DacChannelMode channelMode)
-        {
-            return NativeIsChannelModeSupported((int)channelMode);
-        }
-
-        /// <summary>
         /// Opens a connection to the specified DAC channel.
         /// </summary>
         /// <param name="channelNumber">
