@@ -57,7 +57,6 @@
   <Import Project="$(NanoFrameworkProjectSystemPath)NFProjectSystem.props" Condition="Exists('$(NanoFrameworkProjectSystemPath)NFProjectSystem.props')" />
   <ItemGroup>
     <Compile Include="DacChannel.cs" />
-    <Compile Include="DacChannelMode.cs" />
     <Compile Include="DacController.cs" />
     <Compile Include="DacControllerManager.cs" />
     <Compile Include="IDacChannel.cs" />

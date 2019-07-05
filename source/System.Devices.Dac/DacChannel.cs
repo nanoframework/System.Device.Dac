@@ -3,7 +3,6 @@
 // See LICENSE file in the project root for full license information.
 //
 
-using System;
 using System.Runtime.CompilerServices;
 
 namespace System.Devices.Dac
@@ -15,16 +14,16 @@ namespace System.Devices.Dac
     {
         // this is used as the lock object 
         // a lock is required because multiple threads can access the channel
-        [System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)]
+        [Diagnostics.DebuggerBrowsable(Diagnostics.DebuggerBrowsableState.Never)]
         private readonly object _syncLock;
 
-        [System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)]
+        [Diagnostics.DebuggerBrowsable(Diagnostics.DebuggerBrowsableState.Never)]
         private readonly int  _channelNumber;
 
-        [System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)]
+        [Diagnostics.DebuggerBrowsable(Diagnostics.DebuggerBrowsableState.Never)]
         private DacController _dacController;
 
-        [System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)]
+        [Diagnostics.DebuggerBrowsable(Diagnostics.DebuggerBrowsableState.Never)]
         private bool _disposed;
 
         internal DacChannel(DacController controller, int channelNumber)
@@ -55,7 +54,7 @@ namespace System.Devices.Dac
         /// <returns>
         /// The success or failure.
         /// </returns>
-        public bool WriteValue(double value)
+        public bool WriteValue(UInt16 value)
         {
             lock (_syncLock)
             {
@@ -119,7 +118,7 @@ namespace System.Devices.Dac
         #region Native Calls
 
         [MethodImpl(MethodImplOptions.InternalCall)]
-        private extern bool NativeWriteValue(double value);
+        private extern bool NativeWriteValue(UInt16 value);
 
         [MethodImpl(MethodImplOptions.InternalCall)]
         private extern void NativeDisposeChannel();
