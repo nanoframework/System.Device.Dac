@@ -54,14 +54,14 @@ namespace System.Devices.Dac
         /// <returns>
         /// The success or failure.
         /// </returns>
-        public bool WriteValue(UInt16 value)
+        public void WriteValue(UInt16 value)
         {
             lock (_syncLock)
             {
                 // check if pin has been disposed
                 if (_disposed) { throw new ObjectDisposedException(); }
 
-                return NativeWriteValue(value);
+                NativeWriteValue(value);
             }
         }
 
@@ -118,7 +118,7 @@ namespace System.Devices.Dac
         #region Native Calls
 
         [MethodImpl(MethodImplOptions.InternalCall)]
-        private extern bool NativeWriteValue(UInt16 value);
+        private extern void NativeWriteValue(UInt16 value);
 
         [MethodImpl(MethodImplOptions.InternalCall)]
         private extern void NativeDisposeChannel();

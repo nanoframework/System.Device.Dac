@@ -7,7 +7,7 @@ namespace System.Devices.Dac
 {
     internal interface IDacChannel
     {
-        bool WriteValue(UInt16 value);
+        void WriteValue(UInt16 value);
 
         DacController Controller { get; }
     }
