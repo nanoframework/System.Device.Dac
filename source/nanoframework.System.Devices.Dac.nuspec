@@ -24,11 +24,11 @@ This package requires a target with System.Devices.Dac v$nativeVersion$.</descri
     </dependencies>
   </metadata>
   <files>
-    <file src="System.Devices.Dac\bin\Release\Windows.Devices.Adc.dll" target="lib\System.Devices.Dac.dll" />
-    <file src="System.Devices.Dac\bin\Release\Windows.Devices.Adc.pdb" target="lib\System.Devices.Dac.pdb" />
-    <file src="System.Devices.Dac\bin\Release\Windows.Devices.Adc.pdbx" target="lib\System.Devices.Dac.pdbx" />
-    <file src="System.Devices.Dac\bin\Release\Windows.Devices.Adc.pe" target="lib\System.Devices.Dac.pe" />
-    <file src="System.Devices.Dac\bin\Release\Windows.Devices.Adc.xml" target="lib\System.Devices.Dac.xml" />
+    <file src="System.Devices.Dac\bin\Release\System.Devices.Dac.dll" target="lib\System.Devices.Dac.dll" />
+    <file src="System.Devices.Dac\bin\Release\System.Devices.Dac.pdb" target="lib\System.Devices.Dac.pdb" />
+    <file src="System.Devices.Dac\bin\Release\System.Devices.Dac.pdbx" target="lib\System.Devices.Dac.pdbx" />
+    <file src="System.Devices.Dac\bin\Release\System.Devices.Dac.pe" target="lib\System.Devices.Dac.pe" />
+    <file src="System.Devices.Dac\bin\Release\System.Devices.Dac.xml" target="lib\System.Devices.Dac.xml" />
     <!-- readme -->
     <file src="readme.txt" target="readme.txt" />
   </files>
