@@ -1,5 +1,5 @@
 ﻿//
-// Copyright (c) 2017 The nanoFramework project contributors
+// Copyright (c) 2019 The nanoFramework project contributors
 // See LICENSE file in the project root for full license information.
 //
 
@@ -16,17 +16,14 @@ namespace System.Devices.Dac
     {
         // this is used as the lock object 
         // a lock is required because multiple threads can access the DacController
-        [System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)]
+        [Diagnostics.DebuggerBrowsable(Diagnostics.DebuggerBrowsableState.Never)]
         private object _syncLock;
 
-        [System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)]
+        [Diagnostics.DebuggerBrowsable(Diagnostics.DebuggerBrowsableState.Never)]
         private readonly int _controllerId;
 
-        [System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)]
-        private DacChannelMode _channelMode;
-
         // backing field for DeviceCollection
-        [System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)]
+        [Diagnostics.DebuggerBrowsable(Diagnostics.DebuggerBrowsableState.Never)]
         private Hashtable s_deviceCollection;
 
         /// <summary>
@@ -95,50 +92,6 @@ namespace System.Devices.Dac
             get
             {
                 return NativeGetChannelCount();
-            }
-        }
-
-        /// <summary>
-        /// Gets or sets the channel mode for the DAC controller.
-        /// </summary>
-        /// <value>
-        /// The DAC channel mode.
-        /// </value>
-        public DacChannelMode ChannelMode {
-            get
-            {
-                return _channelMode;
-            }
-            set
-            {
-                _channelMode = value;
-            }
-        }
-
-        /// <summary>
-        /// Gets the maximum value that the controller can report.
-        /// </summary>
-        /// <value>
-        /// The maximum value.
-        /// </value>
-        public int MaxValue {
-            get
-            {
-                return NativeGetMaxValue();
-            }
-            
-        }
-
-        /// <summary>
-        /// The minimum value the controller can report.
-        /// </summary>
-        /// <value>
-        /// The minimum value.
-        /// </value>
-        public int MinValue {
-            get
-            {
-                return NativeGetMinValue();
             }
         }
 
@@ -223,15 +176,6 @@ namespace System.Devices.Dac
 
         [MethodImpl(MethodImplOptions.InternalCall)]
         private extern int NativeGetChannelCount();
-
-        [MethodImpl(MethodImplOptions.InternalCall)]
-        private extern int NativeGetMaxValue();
-
-        [MethodImpl(MethodImplOptions.InternalCall)]
-        private extern int NativeGetMinValue();
-
-        [MethodImpl(MethodImplOptions.InternalCall)]
-        private extern bool NativeIsChannelModeSupported(int mode);
 
         [MethodImpl(MethodImplOptions.InternalCall)]
         private extern int NativeGetResolutionInBits();
