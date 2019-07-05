@@ -28,10 +28,24 @@ namespace System.Devices.Dac
 
         internal DacChannel(DacController controller, int channelNumber)
         {
-            _dacController = controller;
-            _channelNumber = channelNumber;
+            // check if this channel ID is already in the collection
+            if (!controller.DeviceCollection.Contains(channelNumber))
+            {
+                // device doesn't exist, create it...
 
-            _syncLock = new object();
+                _dacController = controller;
+                _channelNumber = channelNumber;
+
+                // ... and add this device
+                controller.DeviceCollection.Add(channelNumber, this);
+
+                _syncLock = new object();
+            }
+            else
+            {
+                // this channel is already in use, throw an exception
+                throw new DacChannelAlreadyInUseException();
+            }
         }
 
         /// <summary>
@@ -78,14 +92,33 @@ namespace System.Devices.Dac
 
         private void Dispose(bool disposing)
         {
-            if (_dacController != null)
+            if (!_disposed)
             {
+                bool disposeController = false;
+
                 if (disposing)
                 {
-                    NativeDisposeChannel();
-                    _dacController = null;
+                    // get the controller Id
+                    // it's enough to divide by the device unique id multiplier as we'll get the thousands digit, which is the controller ID
+                    var controller = (DacController)DacControllerManager.ControllersCollection[_dacController];
+
+                    // remove from device collection
+                    controller.DeviceCollection.Remove(_channelNumber);
+
+                    // it's OK to also remove the controller, if there is no other device associated
+                    if (controller.DeviceCollection.Count == 0)
+                    {
+                        DacControllerManager.ControllersCollection.Remove(controller);
+
+                        controller = null;
+
+                        // flag this to native dispose
+                        disposeController = true;
+                    }
 
                 }
+
+                NativeDispose(disposeController);
 
                 _disposed = true;
             }
@@ -121,7 +154,7 @@ namespace System.Devices.Dac
         private extern void NativeWriteValue(UInt16 value);
 
         [MethodImpl(MethodImplOptions.InternalCall)]
-        private extern void NativeDisposeChannel();
+        private extern void NativeDispose(bool disposeController);
 
         #endregion
 

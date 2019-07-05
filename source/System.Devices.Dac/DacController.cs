@@ -20,7 +20,7 @@ namespace System.Devices.Dac
         private object _syncLock;
 
         [Diagnostics.DebuggerBrowsable(Diagnostics.DebuggerBrowsableState.Never)]
-        private readonly int _controllerId;
+        internal readonly int _controllerId;
 
         // backing field for DeviceCollection
         [Diagnostics.DebuggerBrowsable(Diagnostics.DebuggerBrowsableState.Never)]
