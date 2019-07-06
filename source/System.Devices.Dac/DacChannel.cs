@@ -100,7 +100,7 @@ namespace System.Devices.Dac
                 {
                     // get the controller Id
                     // it's enough to divide by the device unique id multiplier as we'll get the thousands digit, which is the controller ID
-                    var controller = (DacController)DacControllerManager.ControllersCollection[_dacController];
+                    var controller = (DacController)DacControllerManager.ControllersCollection[_dacController._controllerId];
 
                     // remove from device collection
                     controller.DeviceCollection.Remove(_channelNumber);
