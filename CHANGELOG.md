@@ -2,6 +2,13 @@
 
 ## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/lib-System.Devices.Dac/tree/HEAD)
 
+[Full Changelog](https://github.com/nanoframework/lib-System.Devices.Dac/compare/v1.0.0-preview.17...HEAD)
+
+**Documentation and other chores:**
+
+- Update readme.txt [\#2](https://github.com/nanoframework/lib-System.Devices.Dac/pull/2)
+
+## [v1.0.0-preview.17](https://github.com/nanoframework/lib-System.Devices.Dac/tree/v1.0.0-preview.17) (2019-07-06)
 **Documentation and other chores:**
 
 - Exception on dispose [\#1](https://github.com/nanoframework/lib-System.Devices.Dac/pull/1)
