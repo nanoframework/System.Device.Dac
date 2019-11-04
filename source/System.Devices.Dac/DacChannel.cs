@@ -29,7 +29,10 @@ namespace System.Devices.Dac
         internal DacChannel(DacController controller, int channelNumber)
         {
             // check if this channel ID is already in the collection
-            if (!controller.DeviceCollection.Contains(channelNumber))
+
+            var channel = FindChannel(controller, channelNumber);
+
+            if (channel == null)
             {
                 // device doesn't exist, create it...
 
@@ -37,7 +40,7 @@ namespace System.Devices.Dac
                 _channelNumber = channelNumber;
 
                 // ... and add this device
-                controller.DeviceCollection.Add(channelNumber, this);
+                controller.DeviceCollection.Add(this);
 
                 _syncLock = new object();
             }
@@ -88,6 +91,19 @@ namespace System.Devices.Dac
             }
         }
 
+        internal static DacChannel FindChannel(DacController controller, int index)
+        {
+            for (int i = 0; i < controller.DeviceCollection.Count; i++)
+            {
+                if (((DacChannel)controller.DeviceCollection[i])._channelNumber == index)
+                {
+                    return (DacChannel)controller.DeviceCollection[i];
+                }
+            }
+
+            return null;
+        }
+
         #region IDisposable Support
 
         private void Dispose(bool disposing)
@@ -98,24 +114,29 @@ namespace System.Devices.Dac
 
                 if (disposing)
                 {
-                    // get the controller Id
-                    // it's enough to divide by the device unique id multiplier as we'll get the thousands digit, which is the controller ID
-                    var controller = (DacController)DacControllerManager.ControllersCollection[_dacController._controllerId];
+                    // get the controller
+                    var controller = DacController.FindController(_dacController._controllerId);
 
-                    // remove from device collection
-                    controller.DeviceCollection.Remove(_channelNumber);
-
-                    // it's OK to also remove the controller, if there is no other device associated
-                    if (controller.DeviceCollection.Count == 0)
+                    if (controller != null)
                     {
-                        DacControllerManager.ControllersCollection.Remove(controller);
+                        // find device
+                        var device = FindChannel(controller, _channelNumber);
 
-                        controller = null;
+                        if (device != null)
+                        {
+                            // remove from device collection
+                            controller.DeviceCollection.Remove(device);
 
-                        // flag this to native dispose
-                        disposeController = true;
+                            // it's OK to also remove the controller, if there is no other device associated
+                            if (controller.DeviceCollection.Count == 0)
+                            {
+                                DacControllerManager.ControllersCollection.Remove(controller);
+
+                                // flag this to native dispose
+                                disposeController = true;
+                            }
+                        }
                     }
-
                 }
 
                 NativeDispose(disposeController);

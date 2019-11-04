@@ -24,7 +24,7 @@ namespace System.Devices.Dac
 
         // backing field for DeviceCollection
         [Diagnostics.DebuggerBrowsable(Diagnostics.DebuggerBrowsableState.Never)]
-        private Hashtable s_deviceCollection;
+        private ArrayList s_deviceCollection;
 
         /// <summary>
         /// Device collection associated with this <see cref="DacController"/>.
@@ -32,7 +32,7 @@ namespace System.Devices.Dac
         /// <remarks>
         /// This collection is for internal use only.
         /// </remarks>
-        internal Hashtable DeviceCollection
+        internal ArrayList DeviceCollection
         {
             get
             {
@@ -42,7 +42,7 @@ namespace System.Devices.Dac
                     {
                         if (s_deviceCollection == null)
                         {
-                            s_deviceCollection = new Hashtable();
+                            s_deviceCollection = new ArrayList();
                         }
                     }
                 }
@@ -63,7 +63,9 @@ namespace System.Devices.Dac
             _controllerId = dacController[3] - '0';
 
             // check if this device is already opened
-            if (!DacControllerManager.ControllersCollection.Contains(_controllerId))
+            var myController = FindController(_controllerId);
+
+            if (myController == null)
             {
                 // call native init to allow HAL/PAL inits related with DAC hardware
                 // this is also used to check if the requested DAC actually exists
@@ -71,7 +73,7 @@ namespace System.Devices.Dac
 
                 // add controller to collection, with the ID as key 
                 // *** just the index number ***
-                DacControllerManager.ControllersCollection.Add(_controllerId, this);
+                DacControllerManager.ControllersCollection.Add(this);
 
                 _syncLock = new object();
             }
@@ -130,10 +132,11 @@ namespace System.Devices.Dac
                 // the first one in the collection returned from the native end //
                 //////////////////////////////////////////////////////////////////
 
-                if (DacControllerManager.ControllersCollection.Contains(controllerId))
+                var myController = FindController(controllerId);
+                if (myController != null)
                 {
                     // controller is already open
-                    return (DacController)DacControllerManager.ControllersCollection[controllerId];
+                    return myController;
                 }
                 else
                 {
@@ -162,8 +165,21 @@ namespace System.Devices.Dac
             return new DacChannel(this, channelNumber);
         }
 
+        internal static DacController FindController(int index)
+        {
+            for (int i = 0; i < DacControllerManager.ControllersCollection.Count; i++)
+            {
+                if (((DacController)DacControllerManager.ControllersCollection[i])._controllerId == index)
+                {
+                    return (DacController)DacControllerManager.ControllersCollection[i];
+                }
+            }
+
+            return null;
+        }
+
         #region Native Calls
- 
+
         /// <summary>
         /// Retrieves an string of all the DAC controllers on the system. 
         /// </summary>
