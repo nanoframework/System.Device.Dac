@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.3.0](https://github.com/nanoframework/lib-System.Devices.Dac/tree/v1.3.0) (2020-06-11)
+
+[Full Changelog](https://github.com/nanoframework/lib-System.Devices.Dac/compare/v1.3.0-preview.19...v1.3.0)
+
+**Documentation and other chores:**
+
+- Release release-v1.3.0 [\#22](https://github.com/nanoframework/lib-System.Devices.Dac/pull/22)
+
 ## [v1.3.0-preview.19](https://github.com/nanoframework/lib-System.Devices.Dac/tree/v1.3.0-preview.19) (2020-06-11)
 
 [Full Changelog](https://github.com/nanoframework/lib-System.Devices.Dac/compare/v1.3.0-preview.16...v1.3.0-preview.19)
@@ -80,7 +88,6 @@
 **Documentation and other chores:**
 
 - Bumps nanoFramework.CoreLibrary from 1.5.1-preview.1 to 1.6.0-preview.1 [\#11](https://github.com/nanoframework/lib-System.Devices.Dac/pull/11)
-- Bumps nanoFramework.CoreLibrary from 1.4.1-preview.1 to 1.5.0-preview.1 [\#9](https://github.com/nanoframework/lib-System.Devices.Dac/pull/9)
 
 ## [v1.3.0-preview.6](https://github.com/nanoframework/lib-System.Devices.Dac/tree/v1.3.0-preview.6) (2019-11-07)
 
@@ -93,6 +100,10 @@
 ## [v1.3.0-preview.5](https://github.com/nanoframework/lib-System.Devices.Dac/tree/v1.3.0-preview.5) (2019-11-05)
 
 [Full Changelog](https://github.com/nanoframework/lib-System.Devices.Dac/compare/v1.3.0-preview.3...v1.3.0-preview.5)
+
+**Documentation and other chores:**
+
+- Bumps nanoFramework.CoreLibrary from 1.4.1-preview.1 to 1.5.0-preview.1 [\#9](https://github.com/nanoframework/lib-System.Devices.Dac/pull/9)
 
 ## [v1.3.0-preview.3](https://github.com/nanoframework/lib-System.Devices.Dac/tree/v1.3.0-preview.3) (2019-10-23)
 
