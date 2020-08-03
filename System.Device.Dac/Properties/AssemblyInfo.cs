@@ -5,9 +5,9 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("System.Devices.Dac")]
+[assembly: AssemblyTitle("System.Device.Dac")]
 [assembly: AssemblyCompany("nanoFramework Contributors")]
-[assembly: AssemblyProduct("System.Devices.Dac")]
+[assembly: AssemblyProduct("System.Device.Dac")]
 [assembly: AssemblyCopyright("Copyright © nanoFramework Contributors 2019")]
 
 ////////////////////////////////////////////////////////////////

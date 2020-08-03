@@ -12,11 +12,11 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <FileAlignment>512</FileAlignment>
-    <RootNamespace>System.Devices.Dac</RootNamespace>
-    <AssemblyName>System.Devices.Dac</AssemblyName>
+    <RootNamespace>System.Device.Dac</RootNamespace>
+    <AssemblyName>System.Device.Dac</AssemblyName>
     <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
     <NF_IsCoreLibrary>True</NF_IsCoreLibrary>
-    <DocumentationFile>bin\$(Configuration)\System.Devices.Dac.xml</DocumentationFile>
+    <DocumentationFile>bin\$(Configuration)\System.Device.Dac.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
@@ -31,7 +31,7 @@
     <!-- override default options for MetaDataProcessor -->
     <NF_GenerateStubsDirectory>bin\$(Configuration)\Stubs</NF_GenerateStubsDirectory>
     <NF_GenerateSkeletonProjectName>sys_dev_dac_native</NF_GenerateSkeletonProjectName>
-    <Name>System.Devices.Dac</Name>
+    <Name>System.Device.Dac</Name>
   </PropertyGroup>
   <ItemGroup>
     <NFMDP_PE_ExcludeClassByName Include="ThisAssembly">

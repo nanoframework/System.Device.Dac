@@ -7,7 +7,7 @@ using System;
 using System.Collections;
 using System.Runtime.CompilerServices;
 
-namespace System.Devices.Dac
+namespace System.Device.Dac
 {
     /// <summary>
     /// Represents an DAC controller on the system

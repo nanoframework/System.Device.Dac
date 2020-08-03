@@ -3,12 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "System.Devices.Dac", "System.Devices.Dac\System.Devices.Dac.nfproj", "{0E60B0DD-2B15-4664-8BD9-800AAD1717B3}"
+Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "System.Device.Dac", "System.Device.Dac\System.Device.Dac.nfproj", "{0E60B0DD-2B15-4664-8BD9-800AAD1717B3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DAE1E14A-5F94-4CF2-A94E-B4722F116FB6}"
 	ProjectSection(SolutionItems) = preProject
-		nanoframework.System.Devices.Dac.DELIVERABLES.nuspec = nanoframework.System.Devices.Dac.DELIVERABLES.nuspec
-		nanoframework.System.Devices.Dac.nuspec = nanoframework.System.Devices.Dac.nuspec
+		nanoframework.System.Device.Dac.DELIVERABLES.nuspec = nanoframework.System.Device.Dac.DELIVERABLES.nuspec
+		nanoframework.System.Device.Dac.nuspec = nanoframework.System.Device.Dac.nuspec
 		NuGet.Config = NuGet.Config
 		version.json = version.json
 	EndProjectSection

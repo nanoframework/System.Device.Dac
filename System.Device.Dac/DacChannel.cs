@@ -5,7 +5,7 @@
 
 using System.Runtime.CompilerServices;
 
-namespace System.Devices.Dac
+namespace System.Device.Dac
 {
     /// <summary>
     /// Represents a single DAC channel.
