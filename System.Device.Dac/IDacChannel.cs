@@ -3,7 +3,7 @@
 // See LICENSE file in the project root for full license information.
 //
 
-namespace System.Devices.Dac
+namespace System.Device.Dac
 {
     internal interface IDacChannel
     {

@@ -24,9 +24,9 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
-  classLibName: 'System.Devices.Dac'
-  nugetPackageName: 'nanoFramework.System.Devices.Dac'
-  repoName: 'lib-System.Devices.Dac'
+  classLibName: 'System.Device.Dac'
+  nugetPackageName: 'nanoFramework.System.Device.Dac'
+  repoName: 'lib-System.Device.Dac'
 
 steps:
 
@@ -34,7 +34,7 @@ steps:
 # all build, update and publish steps
 - template: azure-pipelines-templates/class-lib-build.yml@templates
   parameters:
-    sonarCloudProject: 'nanoframework_lib-System.Devices.Dac'
+    sonarCloudProject: 'nanoframework_lib-System.Device.Dac'
 
 # step from template @ nf-tools repo
 # report error

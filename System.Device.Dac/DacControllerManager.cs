@@ -5,7 +5,7 @@
 
 using System.Collections;
 
-namespace System.Devices.Dac
+namespace System.Device.Dac
 {
     internal sealed class DacControllerManager
     {

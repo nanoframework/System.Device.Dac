@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>nanoFramework.System.Device.Dac</id>
+    <version>$version$</version>
+    <title>nanoFramework.System.Device.Dac</title>
+    <authors>nanoFramework project contributors</authors>
+    <owners>nanoFramework project contributors</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">Apache-2.0</license>
+    <releaseNotes>
+    </releaseNotes>
+    <developmentDependency>false</developmentDependency>
+    <projectUrl>https://github.com/nanoframework/lib-System.Device.Dac</projectUrl>
+    <iconUrl>https://secure.gravatar.com/avatar/97d0e092247f0716db6d4b47b7d1d1ad</iconUrl>
+    <repository type="git" url="https://github.com/nanoframework/lib-System.Device.Dac" commit="$commit$" />
+    <copyright>Copyright (c) 2019 The nanoFramework project contributors</copyright>
+    <description>This package includes the System.Device.Dac assembly for nanoFramework C# projects.
+This package requires a target with System.Device.Dac v$nativeVersion$.</description>
+    <summary>System.Device.Dac assembly for nanoFramework C# projects</summary>
+    <tags>nanoFramework C# csharp netmf netnf System.Device.Dac</tags>
+    <dependencies>
+      <dependency id="nanoFramework.CoreLibrary" version="1.7.3" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="System.Device.Dac\bin\Release\System.Device.Dac.dll" target="lib\System.Device.Dac.dll" />
+    <file src="System.Device.Dac\bin\Release\System.Device.Dac.pdb" target="lib\System.Device.Dac.pdb" />
+    <file src="System.Device.Dac\bin\Release\System.Device.Dac.pdbx" target="lib\System.Device.Dac.pdbx" />
+    <file src="System.Device.Dac\bin\Release\System.Device.Dac.pe" target="lib\System.Device.Dac.pe" />
+    <file src="System.Device.Dac\bin\Release\System.Device.Dac.xml" target="lib\System.Device.Dac.xml" />
+    <!-- readme -->
+    <file src="readme.txt" target="readme.txt" />
+  </files>
+</package>

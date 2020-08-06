@@ -6,7 +6,7 @@
                                                                                
 ===================================================================================
 
-API docs: https://docs.nanoframework.net/api/System.Devices.Dac.html
+API docs: https://docs.nanoframework.net/api/System.Device.Dac.html
 
 Browse our samples repository: https://github.com/nanoframework/samples
 
