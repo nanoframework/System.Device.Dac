@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.4.1-preview.3](https://github.com/nanoframework/lib-System.Device.Dac/tree/v1.4.1-preview.3) (2020-09-10)
+
+[Full Changelog](https://github.com/nanoframework/lib-System.Device.Dac/compare/v1.4.1-preview.2...v1.4.1-preview.3)
+
 ## [v1.4.1-preview.2](https://github.com/nanoframework/lib-System.Device.Dac/tree/v1.4.1-preview.2) (2020-08-06)
 
 [Full Changelog](https://github.com/nanoframework/lib-System.Device.Dac/compare/v1.4.0...v1.4.1-preview.2)
