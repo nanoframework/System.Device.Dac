@@ -2,7 +2,15 @@
 
 ## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/lib-System.Device.Dac/tree/HEAD)
 
-[Full Changelog](https://github.com/nanoframework/lib-System.Device.Dac/compare/v1.4.1-preview.13...HEAD)
+[Full Changelog](https://github.com/nanoframework/lib-System.Device.Dac/compare/v1.4.1-preview.15...HEAD)
+
+**Documentation and other chores:**
+
+- Bumps nanoFramework.CoreLibrary from 1.9.1-preview.4 to 1.9.1-preview.6 [\#29](https://github.com/nanoframework/lib-System.Device.Dac/pull/29)
+
+## [v1.4.1-preview.15](https://github.com/nanoframework/lib-System.Device.Dac/tree/v1.4.1-preview.15) (2020-10-20)
+
+[Full Changelog](https://github.com/nanoframework/lib-System.Device.Dac/compare/v1.4.1-preview.13...v1.4.1-preview.15)
 
 **Documentation and other chores:**
 
