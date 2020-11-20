@@ -7,16 +7,17 @@
     <authors>nanoFramework project contributors</authors>
     <owners>nanoFramework project contributors</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <license type="expression">Apache-2.0</license>
+    <license type="expression">MIT</license>
     <releaseNotes>
     </releaseNotes>
     <developmentDependency>false</developmentDependency>
     <projectUrl>https://github.com/nanoframework/lib-System.Device.Dac</projectUrl>
     <iconUrl>https://secure.gravatar.com/avatar/97d0e092247f0716db6d4b47b7d1d1ad</iconUrl>
+    <icon>images\nf-logo.png</icon>
     <repository type="git" url="https://github.com/nanoframework/lib-System.Device.Dac" commit="$commit$" />
     <copyright>Copyright (c) .NET Foundation and Contributors</copyright>
     <description>This package includes the System.Device.Dac assembly for nanoFramework C# projects.
-This package requires a target with System.Device.Dac v$nativeVersion$.</description>
+This package requires a target with System.Device.Dac v$nativeVersion$ (checksum $checksum$).</description>
     <summary>System.Device.Dac assembly for nanoFramework C# projects</summary>
     <tags>nanoFramework C# csharp netmf netnf System.Device.Dac</tags>
     <dependencies>
@@ -31,5 +32,6 @@ This package requires a target with System.Device.Dac v$nativeVersion$.</descrip
     <file src="System.Device.Dac\bin\Release\System.Device.Dac.xml" target="lib\System.Device.Dac.xml" />
     <!-- readme -->
     <file src="readme.txt" target="readme.txt" />
+    <file src="System.Device.Dac\nf-logo.png" target="images\" />
   </files>
 </package>
