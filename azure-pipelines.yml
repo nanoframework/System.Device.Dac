@@ -1,6 +1,6 @@
 trigger:
   branches:
-    include: [master, develop, "release-*" ]
+    include: [main, develop, "release-*" ]
   paths:
     exclude: ["*.md", .gitignore]
   tags:
@@ -26,7 +26,7 @@ variables:
   buildConfiguration: 'Release'
   classLibName: 'System.Device.Dac'
   nugetPackageName: 'nanoFramework.System.Device.Dac'
-  repoName: 'lib-System.Device.Dac'
+  repoName: 'System.Device.Dac'
 
 steps:
 
