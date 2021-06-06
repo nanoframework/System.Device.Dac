@@ -2,7 +2,7 @@ trigger:
   branches:
     include: [main, develop, "release-*" ]
   paths:
-    exclude: ["*.md", .gitignore]
+    exclude: [README.md, LICENSE.md, NuGet.Config, .github_changelog_generator, .gitignore]
   tags:
     include: ["v*"]
 
@@ -26,7 +26,6 @@ variables:
   buildConfiguration: 'Release'
   classLibName: 'System.Device.Dac'
   nugetPackageName: 'nanoFramework.System.Device.Dac'
-  repoName: 'System.Device.Dac'
 
 steps:
 
@@ -34,7 +33,7 @@ steps:
 # all build, update and publish steps
 - template: azure-pipelines-templates/class-lib-build.yml@templates
   parameters:
-    sonarCloudProject: 'nanoframework_lib-System.Device.Dac'
+    sonarCloudProject: 'nanoframework_lib-System.Devices.Dac'
 
 # step from template @ nf-tools repo
 # report error
