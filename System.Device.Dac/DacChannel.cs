@@ -1,11 +1,11 @@
 ﻿//
-// Copyright (c) 2019 The nanoFramework project contributors
+// Copyright (c) .NET Foundation and Contributors
 // See LICENSE file in the project root for full license information.
 //
 
 using System.Runtime.CompilerServices;
 
-namespace System.Devices.Dac
+namespace System.Device.Dac
 {
     /// <summary>
     /// Represents a single DAC channel.
