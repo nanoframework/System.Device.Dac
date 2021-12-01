@@ -23,7 +23,7 @@ pool:
 
 variables:
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
-  solution: '**/*.sln'
+  solution: 'nanoFramework.System.Device.Dac.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
   classLibName: 'System.Device.Dac'
