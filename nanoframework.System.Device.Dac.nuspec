@@ -5,11 +5,12 @@
     <version>$version$</version>
     <title>nanoFramework.System.Device.Dac</title>
     <authors>nanoFramework project contributors</authors>
-    <owners>nanoFramework project contributors,dotnetfoundation</owners>
+    <owners>nanoFramework,dotnetfoundation</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="file">LICENSE.md</license>
     <releaseNotes>
     </releaseNotes>
+    <readme>docs\README.md</readme>
     <developmentDependency>false</developmentDependency>
     <projectUrl>https://github.com/nanoframework/System.Device.Dac</projectUrl>
     <icon>images\nf-logo.png</icon>
@@ -17,10 +18,9 @@
     <copyright>Copyright (c) .NET Foundation and Contributors</copyright>
     <description>This package includes the System.Device.Dac assembly for .NET nanoFramework C# projects.
 This package requires a target with System.Device.Dac v$nativeVersion$ (checksum $checksum$).</description>
-    <summary>System.Device.Dac assembly for nanoFramework C# projects</summary>
     <tags>nanoFramework C# csharp netmf netnf System.Device.Dac</tags>
     <dependencies>
-      <dependency id="nanoFramework.CoreLibrary" version="1.10.5" />
+      <dependency id="nanoFramework.CoreLibrary" version="1.11.7" />
     </dependencies>
   </metadata>
   <files>
@@ -30,6 +30,7 @@ This package requires a target with System.Device.Dac v$nativeVersion$ (checksum
     <file src="System.Device.Dac\bin\Release\System.Device.Dac.pe" target="lib\System.Device.Dac.pe" />
     <file src="System.Device.Dac\bin\Release\System.Device.Dac.xml" target="lib\System.Device.Dac.xml" />
     <file src="assets\readme.txt" target="" />
+    <file src="README.md" target="docs\" />
     <file src="assets\nf-logo.png" target="images" />
     <file src="LICENSE.md" target="" />
   </files>
