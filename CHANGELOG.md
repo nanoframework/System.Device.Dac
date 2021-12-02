@@ -1,7 +1,5 @@
 # Changelog
 
-## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/System.Device.Dac/tree/HEAD)
-
 [Full Changelog](https://github.com/nanoframework/System.Device.Dac/compare/v1.4.2-preview.7...HEAD)
 
 **Documentation and other chores:**
