@@ -2,6 +2,58 @@
 
 ## [v1.4.2-preview.9](https://github.com/nanoframework/System.Device.Dac/tree/v1.4.2-preview.9) (2021-12-02)
 
+[Full Changelog](https://github.com/nanoframework/System.Device.Dac/compare/v1.4.3-preview.13...HEAD)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#66](https://github.com/nanoframework/System.Device.Dac/pull/66)
+
+## [v1.4.3-preview.13](https://github.com/nanoframework/System.Device.Dac/tree/v1.4.3-preview.13) (2022-03-17)
+
+[Full Changelog](https://github.com/nanoframework/System.Device.Dac/compare/v1.4.3-preview.11...v1.4.3-preview.13)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#65](https://github.com/nanoframework/System.Device.Dac/pull/65)
+
+## [v1.4.3-preview.11](https://github.com/nanoframework/System.Device.Dac/tree/v1.4.3-preview.11) (2022-03-14)
+
+[Full Changelog](https://github.com/nanoframework/System.Device.Dac/compare/v1.4.3-preview.8...v1.4.3-preview.11)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#64](https://github.com/nanoframework/System.Device.Dac/pull/64)
+
+## [v1.4.3-preview.8](https://github.com/nanoframework/System.Device.Dac/tree/v1.4.3-preview.8) (2022-02-17)
+
+[Full Changelog](https://github.com/nanoframework/System.Device.Dac/compare/v1.4.3-preview.6...v1.4.3-preview.8)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#63](https://github.com/nanoframework/System.Device.Dac/pull/63)
+
+## [v1.4.3-preview.6](https://github.com/nanoframework/System.Device.Dac/tree/v1.4.3-preview.6) (2022-01-28)
+
+[Full Changelog](https://github.com/nanoframework/System.Device.Dac/compare/v1.4.3-preview.4...v1.4.3-preview.6)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#62](https://github.com/nanoframework/System.Device.Dac/pull/62)
+
+## [v1.4.3-preview.4](https://github.com/nanoframework/System.Device.Dac/tree/v1.4.3-preview.4) (2022-01-21)
+
+[Full Changelog](https://github.com/nanoframework/System.Device.Dac/compare/v1.4.2...v1.4.3-preview.4)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#61](https://github.com/nanoframework/System.Device.Dac/pull/61)
+
+## [v1.4.2](https://github.com/nanoframework/System.Device.Dac/tree/v1.4.2) (2021-12-02)
+
+[Full Changelog](https://github.com/nanoframework/System.Device.Dac/compare/v1.4.2-preview.9...v1.4.2)
+
+## [v1.4.2-preview.9](https://github.com/nanoframework/System.Device.Dac/tree/v1.4.2-preview.9) (2021-12-02)
+
 [Full Changelog](https://github.com/nanoframework/System.Device.Dac/compare/v1.4.2-preview.7...v1.4.2-preview.9)
 
 **Documentation and other chores:**
