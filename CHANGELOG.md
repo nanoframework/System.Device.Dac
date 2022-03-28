@@ -1,6 +1,6 @@
 # Changelog
 
-## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/System.Device.Dac/tree/HEAD)
+## [v1.4.2-preview.9](https://github.com/nanoframework/System.Device.Dac/tree/v1.4.2-preview.9) (2021-12-02)
 
 [Full Changelog](https://github.com/nanoframework/System.Device.Dac/compare/v1.4.3-preview.13...HEAD)
 
