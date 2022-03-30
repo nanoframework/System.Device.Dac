@@ -11,7 +11,6 @@
 | Component | Build Status | NuGet Package |
 |:-|---|---|
 | System.Device.Dac | [![Build Status](https://dev.azure.com/nanoframework/System.Device.Dac/_apis/build/status/System.Devices.Dac?repoName=nanoframework%2FSystem.Device.Dac&branchName=main)](https://dev.azure.com/nanoframework/System.Device.Dac/_build/latest?definitionId=44&repoName=nanoframework%2FSystem.Device.Dac&branchName=main) | [![NuGet](https://img.shields.io/nuget/v/nanoFramework.System.Device.Dac.svg?label=NuGet&style=flat&logo=nuget)](https://www.nuget.org/packages/nanoFramework.System.Device.Dac/) |
-| System.Device.Dac (preview) | [![Build Status](https://dev.azure.com/nanoframework/System.Device.Dac/_apis/build/status/System.Devices.Dac?repoName=nanoframework%2FSystem.Device.Dac&branchName=develop)](https://dev.azure.com/nanoframework/System.Device.Dac/_build/latest?definitionId=44&repoName=nanoframework%2FSystem.Device.Dac&branchName=develop) | [![NuGet](https://img.shields.io/nuget/vpre/nanoFramework.System.Device.Dac.svg?label=NuGet&style=flat&logo=nuget)](https://www.nuget.org/packages/nanoFramework.System.Device.Dac/) |
 
 ## Feedback and documentation
 
