@@ -19,18 +19,16 @@
 This package requires a target with System.Device.Dac v$nativeVersion$ (checksum $checksum$).</description>
     <tags>nanoFramework C# csharp netmf netnf Dac</tags>
     <dependencies>
-      <dependency id="nanoFramework.CoreLibrary" version="2.0.0-preview.29" />
+      <group targetFramework=".NETnanoFramework1.0">
+        <dependency id="nanoFramework.CoreLibrary" version="2.0.0-preview.29" />
+      </group>
     </dependencies>
   </metadata>
   <files>
-    <file src="System.Device.Dac\bin\Release\System.Device.Dac.dll" target="lib\System.Device.Dac.dll" />
-    <file src="System.Device.Dac\bin\Release\System.Device.Dac.pdb" target="lib\System.Device.Dac.pdb" />
-    <file src="System.Device.Dac\bin\Release\System.Device.Dac.pdbx" target="lib\System.Device.Dac.pdbx" />
-    <file src="System.Device.Dac\bin\Release\System.Device.Dac.pe" target="lib\System.Device.Dac.pe" />
-    <file src="System.Device.Dac\bin\Release\System.Device.Dac.xml" target="lib\System.Device.Dac.xml" />
-    <file src="assets\readme.txt" target="" />
     <file src="README.md" target="docs\" />
-    <file src="assets\nf-logo.png" target="images" />
+    <file src="assets\readme.txt" target="" />
     <file src="LICENSE.md" target="" />
+    <file src="assets\nf-logo.png" target="images" />
+    <file src="System.Device.Dac\bin\Release\System.Device.Dac.*" target="lib\netnano1.0" />
   </files>
 </package>
