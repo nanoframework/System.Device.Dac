@@ -19,5 +19,5 @@ jobs:
     secrets: inherit
     with:
       solutionsToCheck: 'nanoFramework.System.Device.Dac.sln'
-      previewPackages: 'true'
+      previewPackages: true
       branchToPr: 'develop'
